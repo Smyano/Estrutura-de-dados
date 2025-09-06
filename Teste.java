@@ -1,22 +1,49 @@
+import java.util.Queue;
+import java.util.Stack;
+import java.util.LinkedList;
+
 public class Teste {
+
     
     public static void main(String[] args) {
-        VetorObjeto vetor = new VetorObjeto(5);
+    Queue<Integer> fila = new LinkedList<Integer>();
 
-        Contato c1 = new Contato ("Claudio","(12)37193-4182","claudio@gamil.com \n");
-        Contato c2 = new Contato ("Maria","(41)37193-4182","maria@gamil.com\n");
-        Contato c3 = new Contato ("Julia","(12)37193-9632","julia@gamil.com");
+    fila.add(1);
+    fila.add(2);
+    fila.add(3); 
+    
+   System.out.println(fila.toString()); 
+   System.out.println(fila.peek());
+   System.out.println(fila.remove()); 
 
-        try{
-            vetor.adiciona(c1);
-            vetor.adiciona(c2);
-            vetor.adiciona(c3);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } System.out.println("Tamanho vetor" + vetor.tamanho);
+    // public static void main(String[] args) {
+    // Queue<Integer> fila = new Fila<Integer>();
 
-        System.out.println(vetor);
+    // @Override
+    // public int size(){
+    //     throw new UnsupportedOperationException("Not supported yet");
+    // }
+
+    // Fila<Integer> fila = new Fila<Integer>();
+    // fila.enfileira(1);
+    // fila.enfileira(2);
+    // fila.enfileira(3);        
+
+    // System.out.println(fila.toString());
+    // System.out.println(fila.desenfileira());
+    // System.out.println(fila.toString());
+
+
+    //     Stack<Integer> stack = new Stack<Integer>();
+
+    // stack.push(1);
+    // stack.push(2);
+    // stack.push(3);  
+
+    // System.out.println(stack);
+    // System.out.println(stack.peek());
+    // System.out.println(stack.pop());
+    // System.out.println(stack);
     
     }
-    
 }
